@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+
+<html lang="pt-br"> 
+    
+     <head> 
+         <meta charset="UTF-8">
+         {% block title %} 
+         <title> Casa criativa </title>
+         {% endblock  title %} 
+        {%include "cabesalho.html" %}
+    </head>
+
+
+      <body id="{{ bodyId }}"> 
+    
+
+        
+                
+
+    <div id="container"> 
+<!-- block com o programa nunjucks instalado faz uma caixa que tera um conteudo especifico localizado no outro block na outra
+pastta html -->
+        {% block content %} 
+        {% endblock %} 
+
+    </div>
+
+    {%include "modal.html" %}
+
+    <!-- include comando no nunjucks para "linkar" analisar oque esta em um file e usar ele nesse file  -->
+
+
+       
+    <script src="/scripts.js"></script>
+</body>
+
+
+
+
+
+
+
+
+</html>

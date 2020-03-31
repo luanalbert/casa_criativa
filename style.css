@@ -1,0 +1,383 @@
+/*    CSS cascading stylesheet 
+        
+        CSS = BOX or Text
+        Bordas
+
+        Espaçamento
+        Prenchimento
+        Pocissionamento
+        
+        */
+    body{
+        background-color: rgb(77, 94, 11);
+        color: rgb(54, 58, 59);
+        
+      
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+    
+    }
+    body.hideSroll{
+        overflow: hidden;
+    }
+
+    button:hover{
+        text-decoration: none;
+        background-color: #0984e3;
+    }
+    .button{
+        background-color: #ff5e85;
+        color: white;
+
+       width: 140px;
+       height: 40px;
+
+       align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+
+        font-size: 14px;
+        font-weight: bold;
+        display: flex;
+       
+
+       box-shadow: 0px 8px 16px rgba(255, 0, 92, 0.20);
+    }
+    footer{
+        text-align: center;
+
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+
+        color: #777;
+    }
+    footer a {
+        opacity: 0.7;
+    }
+    footer a { 
+        color: #25282b;
+        text-decoration: none;
+    }
+    footer a:hover{
+        color: #ff5e84;
+        font-weight: bold;
+    }
+   
+
+
+    
+    
+    
+    #container {
+        width: 90%;
+        max-width:  980px; 
+
+        margin: 40px auto;
+
+        display: flex;
+
+
+    }
+    #intro { 
+        width: 300px;
+
+        margin-right: 64px;
+    }
+    main { 
+        margin: 32px 0;
+       
+    }
+    a {
+        color: #ff5e84;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    a:hover{
+        color: black;
+        text-decoration: underline;
+    }
+    p, .descripition{
+        line-height: 24px;
+        font-size: 16px;
+        letter-spacing: 0.1px;
+    }
+    #botao{
+        display: flex;
+        justify-content: space-between;
+
+        margin-bottom: 32px;
+    }
+    p{
+        font-size: 18px;
+        text-align: left;
+
+    
+    }
+    
+    
+    button {
+        border: none;
+        font-size: 18px;
+        font-weight: bolder;
+
+        background: none;
+        color: #ff5e85;
+
+        cursor: pointer;
+        outline: none;
+
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 18px;
+        letter-spacing: 0.2px;
+
+    }
+  
+    
+    .ideia {
+        display: flex;
+
+        
+        background-color: #fff;
+        border-radius: 8px;
+
+        box-shadow: 0 4px 16px -8px rgb(36, 35, 48);
+
+        margin-bottom: 20px;
+
+        padding: 32px;
+    }
+    .ideia img{
+        width: 60px;
+        height: 60px;
+
+        margin-right: 32px;
+    }
+    .ideia h3{
+        margin: 0;
+    }
+    .ideia p{
+        margin: 8px 0;
+        color: rgb(218, 0, 0);
+    }
+    .ideia .descripition{
+        margin: 16px 0;
+    }
+    #modal {
+        background: #ff5e84;
+        
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 130vh;
+        display: flex;
+        justify-content:  center;   
+        
+        transition: 400ms;
+       
+    }
+    #modal.addScroll{
+        overflow: auto;
+    }
+
+   #modal .content{
+    margin-top: 5%;
+    color: white;
+    
+   }
+    /* h1 {
+        color: #fff;
+    } */
+    .content h1{
+
+        text-align: center ;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    #modal form {
+        width: 80%;
+        height: 50%;
+        max-width: 800px;
+        margin: 0 auto 15%;
+  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        gap: 20px;
+    }
+
+    .content form div:nth-child(3),
+    .content form div:nth-child(4),
+    .content form div:nth-child(5) {
+        grid-column: span 2;
+    }
+    input-wrapper{
+        margin: 16px 0;
+    }
+    
+
+    form input,
+    form textarea{
+        width: 100%;
+
+        padding: 2%;
+
+        box-sizing: border-box;
+
+        border-radius:  6px;
+        border: 1px solid rgba(141, 25, 52, 0.5);
+
+        outline: none;
+        font-size:  16px;
+    }
+    form label{
+        font-weight: 600;
+        line-height: 32px;
+        letter-spacing:  0.8px;
+        color: #fff;
+
+    }
+    form a {
+        background-color: #ffffff22;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self:flex-end;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 6px;
+        transition: 400ms;
+              
+    
+    }
+    form a{
+        width: 150px;
+
+        height: 40px;
+    
+        background-color: #ffffff22;
+
+        color: white;
+    
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+    
+        font-size: 14px;
+
+        font-weight: bold;
+    
+        border-radius: 6px;;
+    
+        align-self: end;
+    
+        transition: 400ms;
+    }
+    
+    form a:hover{
+        background: white;
+        color: #ff5E84;
+    
+        text-decoration: none;
+    }
+    
+    form button {
+        background: white;
+        width: 150px;
+        height: 40px;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-top: 32px;
+    
+        grid-column: 2;
+        justify-self:  end;
+    
+        transition: 400ms;
+
+    }
+    
+    form button:hover{
+        background-color: #0984e3;
+        color: white;
+        
+    }
+    #modal.hide {    
+        opacity: 0;
+        visibility: hidden;
+        
+    }
+    /* IDEIA.HTML */
+    #page-ideias #container{
+        display: block;
+    }
+    
+    
+    #page-ideias header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #page-ideias nav{
+        display: flex; 
+        align-items: center;
+              
+    } 
+    #page-ideias nav li {
+        margin-right: 16px;
+        list-style: none;
+        
+    }
+    #page-ideias nav li a { 
+
+        color: #25282b;}
+    #page-ideias nav li a.button { 
+        color: white;
+    }
+
+    #page-ideias nav li:last-child{
+        margin: 0px;
+  
+    }
+  
+   
+     section#title{
+    text-align: center;
+    
+
+     }
+     section#title p{
+        text-align: center;
+         opacity: 0.5; 
+         margin: 0;   
+    }
+    section#title h1{
+        margin: 0;
+
+        font-size: 28px;
+    }
+
+    section#ideas{
+        display: grid;
+        gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    section.ideia{
+        margin: 0;
+
+    }
+    section#title,
+    section#ideas,
+    footer{
+        margin-top: 64px
+
+    }
+    
+  
+
+    
